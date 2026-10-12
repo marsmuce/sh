@@ -2,6 +2,8 @@
 if pkill -x wlsunset; 
 then
   echo "pkill -x wlsunset"
+  notify-send -t 1000 -h string:x-dunst-stack-tag: "wlsunset" "off"
 else
   wlsunset -l 43.2 -L -77.6 &
+  notify-send -t 1000 -h string:x-dunst-stack-tag: " wlsunset" "on"
 fi
