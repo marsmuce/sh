@@ -1,0 +1,2 @@
+#!/usr/bin/sh
+sh -c 'grim  -g "`slurp`" $HOME/Pictures/Screenshots/$(date +%s).png' || grim $HOME/Pictures/Screenshots/$(date +%s).png

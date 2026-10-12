@@ -1,0 +1,2 @@
+#!/bin/bash
+nmcli --show-secrets --ask connection $1 wg0

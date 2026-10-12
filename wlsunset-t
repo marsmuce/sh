@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+if pkill -x wlsunset; 
+then
+  echo "pkill -x wlsunset"
+else
+  wlsunset -l 43.2 -L -77.6 &
+fi
